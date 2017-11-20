@@ -1,0 +1,19 @@
+{
+  "name": "company-url-guesser",
+  "version": "1.0.0",
+  "description": "seamless.ai test app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robmillersoftware/company-url-guesser.git"
+  },
+  "author": "Rob Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robmillersoftware/company-url-guesser/issues"
+  },
+  "homepage": "https://github.com/robmillersoftware/company-url-guesser#readme"
+}
