@@ -10,21 +10,14 @@ const PORT = process.env.PORT || 5000;
 
 //Currently, development will be set to true unless it recognizes the DYNO environment variable which is set on Heroku
 const isDevelopment = process.env.DYNO ? false : true;
-const serverUrl = isDevelopment ? 'https://young-river-54256.herokuapp.com/companies' : `http://localhost:${PORT}/companies`;
 
 if (isDevelopment) {
   let cors = require('cors');
   app.use(cors());
 }
 
-//Set up static paths
+//Set up static paths. This is pretty much only used to show the background so it's kind of silly
 app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('/', (req, res) => { 
-  res.render(path.join(__dirname, 'build/index.html'), (err, html) => {
-    res.send(html.replace('__SERVER_URL__', serverUrl));
-  });
-});
 
 //API
 app.get('/companies', (req, res) => {
