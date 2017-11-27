@@ -1,0 +1,1 @@
+#This is a simple app that uses the Google Custom Search API to retrieve domain information based on a company's name

@@ -1,19 +1,22 @@
 {
   "name": "company-url-guesser",
-  "version": "1.0.0",
-  "description": "seamless.ai test app",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-scripts": "1.0.17"
+  },
   "scripts": {
-    "test": "test"
+    "dev": "react-scripts start & node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prestart": "npm run build",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robmillersoftware/company-url-guesser.git"
-  },
-  "author": "Rob Miller",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/robmillersoftware/company-url-guesser/issues"
-  },
-  "homepage": "https://github.com/robmillersoftware/company-url-guesser#readme"
+  "devDependencies": {
+    "cors": "^2.8.4"
+  }
 }
